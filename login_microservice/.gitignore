@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Env / virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Python test / coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+*.cover
+*.py,cover
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pycharm
+*.iml
+
+# Node
+node_modules/
