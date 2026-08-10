@@ -48,6 +48,20 @@ login_microservice/
     └── wsgi.py
 ```
 
+### Estructura según Scream Architecture
+
+Scream Architecture propone organizar el sistema de manera que la estructura refleje el dominio del negocio y no la tecnología. En este proyecto, la organización se puede leer de la siguiente forma:
+
+- `login_app`: representa el núcleo del dominio de autenticación.
+- `models.py`: define la entidad de usuario y su persistencia.
+- `views.py`: encapsula las operaciones de negocio relacionadas con creación y autenticación.
+- `urls.py`: expone los casos de uso como endpoints del servicio.
+- `login_microservice`: contiene los elementos técnicos de infraestructura del proyecto, como la configuración global de Django.
+
+En otras palabras, el diseño está orientado a que el negocio sea visible en la estructura del código, en lugar de que la arquitectura dependa de carpetas técnicas como "controllers", "services" o "repositories".
+
+Esto es especialmente útil en un contexto de microservicios porque permite que cada servicio tenga una organización clara, con dominio bien delimitado y fácil de evolucionar.
+
 ---
 
 ## ⚙️ Requisitos previos
